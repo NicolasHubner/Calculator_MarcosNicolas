@@ -48,7 +48,7 @@ function App() {
       <Tela valorBottom={args.valorInicial} valorTop={args.valorTelaSuperior} operator={args.operador} />
       <div className="numbers__operators">
       <div className="numbers">
-      {numberButtons.map((number) => <Button key={number} value={number} nome="valorInicial" onClickFunction={handleChange} />)}
+      {numberButtons.map((number) => <Button key={number} value={number} nome="valorInicial" operator={operatorChange} onClickFunction={handleChange} />)}
       </div>
       <div className="operand">
       {operands.map((operand) => <Button nome="operador" key={operand} value={operand} onClickFunction={operatorChange}/>)}
